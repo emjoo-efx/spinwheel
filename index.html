@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheat Spin Wheel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="input-container">
+            <input type="text" id="option-input" placeholder="Enter an option">
+            <button id="add-option-btn">Add Option</button>
+        </div>
+        <div class="wheel-container">
+            <canvas id="wheel" width="400" height="400"></canvas>
+            <div class="pointer"></div>
+        </div>
+        <div class="controls">
+            <button id="spin-btn">Spin</button>
+            <div class="cheat-container">
+                <label for="cheat-select">Cheat:</label>
+                <select id="cheat-select">
+                    <option value="">None</option>
+                </select>
+            </div>
+        </div>
+        <div class="options-list">
+            <h3>Options:</h3>
+            <ul id="options"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
